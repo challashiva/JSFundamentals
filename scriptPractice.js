@@ -54,3 +54,35 @@ console.log(learningIsFunSentence.indexOf("learning"));
 console.log("I hope you enjoyed learning today.")
 
 //Operator Precedence
+//unary operators
+// //Unary operators act on a single operand to perform operations like type conversion,
+//  value manipulation, or checking certain conditions. 
+// Let's look at some common unary operators and how they work.
+const str = '42';
+const strToNum = +str;
+
+console.log(strToNum); // 42
+console.log(typeof str); // string
+console.log(typeof strToNum); // number
+
+let isOnline = true;
+console.log(!isOnline); // false
+
+let isOffline = false;
+console.log(!isOffline); // true
+
+// Represented by a tilde, ~, it inverts the binary representation of a number. Computers store numbers in binary format (1s and 0s). The ~ operator flips every bit, meaning it changes all 1s to 0s and all 0s to 1s. You will learn more about binary and bits in a future lecture video.
+
+const num = 5; // The binary for 5 is 00000101
+
+console.log(~num); // -6
+
+//The void keyword is a unary operator that evaluates an expression and returns undefined.
+
+const result = void (2 + 2);
+
+console.log(result); // undefined
+// void is also commonly used in hyperlinks to prevent navigation:
+
+<a href="javascript:void(0);">Click Me</a>
+F
