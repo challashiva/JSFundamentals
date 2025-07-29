@@ -85,4 +85,97 @@ console.log(result); // undefined
 // void is also commonly used in hyperlinks to prevent navigation:
 
 <a href="javascript:void(0);">Click Me</a>
-F
+
+
+//Bit wise operators
+//AND Opreator
+
+// The bitwise AND (&) operator returns a 1 in each bit position for which the corresponding bits of both operands are 1. Here's an example:
+
+let a = 5;  // Binary: 101
+let b = 3;  // Binary: 011
+console.log(a & b);  // Output: 1 (Binary: 001)
+
+// The bitwise OR (|) operator returns a 1 in each bit position for which the corresponding bits of either or both operands are 1. For example:
+
+let a1 = 5;  // Binary: 101
+let b1 = 3;  // Binary: 011
+console.log(a1 | b1);  // Output: 7 (Binary: 111)
+
+// The bitwise XOR (^) operator returns a 1 in each bit position for which the corresponding bits of either, but not both, operands are 1. For instance:
+
+let a3 = 5;  // Binary: 101
+let b3 = 3;  // Binary: 011
+console.log(a3 ^ b3);  // Output: 6 (Binary: 110)
+
+// The bitwise NOT (~) operator inverts all the bits of its operand. For example:
+
+let a4 = 5;  // Binary: 101
+console.log(~a4);  // Output: -6
+
+//The left shift (<<) operator shifts all bits to the left by a specified number of positions. For example:
+
+let a5 = 5;  // Binary: 101
+console.log(a5 << 1);  // Output: 10 (Binary: 1010)
+
+//The right shift (>>) operator shifts all bits to the right. For example:
+
+let a6 = 5;  // Binary: 101
+console.log(a6 >> 1);  // Output: 2 (Binary: 10)
+
+
+//CONDITIONAL STATEMENTS
+
+/* An if statement takes a condition and runs a block of code if that condition is truthy. Truthy values are any values that result in true when evaluated in a Boolean context like an if statement. Here are examples of truthy values:
+
+non-empty strings, for example, hello
+
+any number other than 0 and -0, for example, 4, -5, and others
+
+arrays
+
+objects
+
+the boolean true
+
+On the other hand, falsy values are values that evaluate to false in a boolean context. JavaScript has few falsy values, which makes them easy to remember. Here are a few falsy values:
+
+boolean false
+
+0 (zero)
+
+"" (empty string)
+
+null
+
+undefined
+
+NaN (Not a Number) */
+
+if (null) {
+  console.log("This will not run.");
+}
+
+if ("freeCodeCamp") {
+  console.log("This will run.");
+}
+
+const score = 87;
+
+if (score >= 90) {
+ console.log('You got an A'); 
+} else if (score >= 80) {
+ console.log('You got a B'); // You got a B
+} else if (score >= 70) {
+ console.log('You got a C');
+} else {
+ console.log('You failed! You need to study more!');
+}
+
+//The ternary operator
+//SYNTAX : condition ? expressionIfTrue : expressionIfFalse;
+
+const weather = temperature > 25 ? 'sunny' : 'cool';
+
+console.log(`It's a ${weather} day!`);
+
